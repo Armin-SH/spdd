@@ -1,0 +1,105 @@
+.icon {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  object-fit: contain;
+}
+
+.logo {
+  width: 172px;
+  height: 35px;
+  position: relative;
+  object-fit: contain;
+}
+
+@media only screen and (min-width: 640px) and (max-width: 1023px) {
+  .navbar {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    padding: 0 5%;
+  }
+
+  .userInfoName {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .loginButton {
+    min-width: 104px;
+    min-height: 35px;
+    height: 35px;
+    width: 104px;
+    border-radius: 20px;
+    border: solid 2px #d3d6d5;
+    padding: 0 5px;
+  }
+
+  .iconButton {
+    margin: 0 0 0 30px;
+  }
+
+  .loginIcon {
+    width: 25px;
+    height: 25px;
+    position: relative;
+  }
+
+  .hamWrapper {
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  .navbar {
+    width: 100%;
+    justify-content: space-between;
+    padding: 7px 5% 5px;
+  }
+
+  .userInfoName {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .loginButton {
+    min-width: 75px;
+    min-height: 25px;
+    height: 25px;
+    width: 100px;
+    border-radius: 20px;
+    padding: 0 5px;
+    border: solid 2px #d3d6d5;
+  }
+
+  .logo {
+    width: 113px;
+    height: 24px;
+    position: relative;
+    object-fit: contain;
+  }
+
+  .hamWrapper {
+    cursor: pointer;
+  }
+
+  .icon {
+    width: 25px;
+    height: 25px;
+    position: relative;
+  }
+
+  .loginIcon {
+    width: 18px;
+    height: 18px;
+    position: relative;
+  }
+
+  .iconButton {
+    margin: 0 0 0 20px;
+  }
+}
+

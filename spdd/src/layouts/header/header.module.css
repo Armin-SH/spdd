@@ -1,0 +1,43 @@
+.trueHideHeader {
+  display: inline-block;
+  margin-top: -32px;
+  transition: margin-top 1s ease-in-out;
+  z-index: 50;
+}
+
+@media only screen and (min-width: 1280px) {
+  .trueHideHeader {
+    margin-top: -39px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .trueHideHeader {
+    margin-top: -47px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .trueHideHeader {
+    margin-top: -46px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .trueHideHeader {
+    margin-top: -30px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .trueHideHeader {
+    margin-top: -34px;
+  }
+}
+
+.falseHideHeader {
+  display: inline-block;
+  margin-top: 0;
+  transition: margin-top 0.8s ease-out;
+  z-index: 50;
+}

@@ -1,0 +1,431 @@
+.container {
+  justify-content: center;
+  align-items: center;
+  padding: 0 8%;
+}
+
+.arrowUpContainer {
+  position: absolute;
+  top: -60px;
+  display: flex;
+  align-self: center;
+  z-index: 4;
+}
+
+.arrowUpContainer:active {
+  opacity: 0.7;
+}
+
+.arrowUpContainer:hover {
+  cursor: pointer;
+}
+
+.arrowUp {
+  position: relative;
+  object-fit: contain;
+  width: 120px;
+  height: 120px;
+}
+
+.footerLogo {
+  align-self: center;
+  align-items: center;
+  margin-top: 140px;
+}
+
+.footerLogoWrapper {
+  position: relative;
+  object-fit: contain;
+  width: 178px;
+  height: 178px;
+}
+
+.footerTitleLogoWrapper {
+  position: relative;
+  object-fit: contain;
+  height: 43px;
+  width: 158px;
+}
+
+.mediaContainer {
+  width: 70%;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 86px;
+}
+
+.logoContainer {
+  align-items: center;
+  align-self: center;
+  justify-content: space-around;
+  width: 450px;
+}
+
+.footerLogoRes {
+  width: 134px;
+  height: 185px;
+  position: relative;
+  object-fit: contain;
+  margin-right: 10px;
+  margin-left: 10px;
+  z-index: 4;
+}
+
+.aboutTextContainer {
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  align-self: center;
+  margin-left: 80px;
+}
+
+.aboutText {
+  text-align: right;
+  align-self: flex-start;
+}
+
+.socialMedia {
+  align-self: center;
+  align-items: center;
+  margin-top: 10px;
+  width: 440px;
+  justify-content: space-between;
+}
+
+.socialMediaContainer {
+  position: relative;
+  object-fit: contain;
+  width: 47px;
+  height: 47px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.instagramContainer {
+  position: relative;
+  object-fit: contain;
+  width: 186px;
+  height: 93px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.socialMediaIcons {
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.authBox {
+  margin-top: 50px;
+}
+
+.register {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.footerMobile {
+  width: 100%;
+  justify-content: center;
+  align-self: center;
+  margin-bottom: 40px;
+}
+
+.contact {
+  flex-wrap: wrap;
+  align-self: center;
+  margin-top: 15px;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.addressContainer {
+  align-self: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin: 50px 0;
+}
+
+.support {
+  align-items: center;
+}
+
+.address {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.addressText {
+  text-align: center;
+}
+
+.footerLinkContainer {
+  align-items: center;
+  margin: 9px 0;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: #27d4a8;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.footerLinksContainer {
+  align-items: center;
+  width: 70%;
+}
+
+/* Bottom Footer */
+.footer {
+  background-color: #84bffc;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 54px;
+}
+
+.footerText {
+  margin: 0;
+}
+
+.instagramWrapper {
+  align-items: center;
+}
+
+.number, .hiddenText {
+  padding: 0 10px;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .mediaContainer {
+    flex-direction: column;
+  }
+
+  .aboutTextContainer {
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    align-self: center;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 1023px) {
+  .container {
+    padding: 0 5%;
+  }
+
+  .contact {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footerLogoRes {
+    width: 90px;
+    height: 128px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .logoContainer {
+    width: 307px;
+  }
+
+  .mediaContainer {
+    width: 90%;
+    margin: 15px 0 5px;
+  }
+
+  .aboutTextContainer {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+
+  .aboutText {
+    text-align: center;
+  }
+
+  .addressContainer {
+    margin: 15px 0;
+    width: 100%;
+  }
+
+  .address {
+    margin-top: 10px;
+  }
+
+  .footerLogoWrapper {
+    width: 124px;
+    height: 124px;
+  }
+
+  .footerTitleLogoWrapper {
+    width: 111px;
+    height: 30px;
+  }
+
+  .footerLinksContainer {
+    width: 100%;
+  }
+
+  .instagramContainer {
+    width: 102px;
+    height: 51px;
+  }
+
+  .socialMedia {
+    margin-bottom: 15px;
+    width: 300px;
+  }
+
+  .footerLinkContainer {
+    margin: 5px;
+  }
+
+  .number {
+    font-size: 24px;
+    padding: 0 10px;
+  }
+
+  .footerLogo {
+    margin-top: 90px;
+  }
+
+  .footer {
+    height: 35px;
+  }
+
+  .authBox {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  .container {
+    padding: 0 5%;
+  }
+
+  .contact {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footerLinkContainer {
+    margin: 5px;
+  }
+
+  .footerLogoRes {
+    width: 73px;
+    height: 100px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .instagramContainer {
+    width: 80px;
+    height: 40px;
+  }
+
+  .arrowUp {
+    width: 79px;
+    height: 79px;
+  }
+
+  .arrowUpContainer {
+    top: -40px;
+  }
+
+  .footerLogoWrapper {
+    width: 90px;
+    height: 90px;
+  }
+
+  .footerTitleLogoWrapper {
+    width: 82px;
+    height: 22px;
+  }
+
+  .socialMediaContainer {
+    width: 40px;
+    height: 40px;
+  }
+
+  .mediaContainer {
+    width: 90%;
+    margin: 15px 0;
+  }
+
+  .logoContainer {
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 20px 0;
+  }
+
+  .socialMedia {
+    margin-top: 0;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .footerMobile {
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .addressContainer {
+    margin: 0;
+    flex: 1;
+    justify-content: space-between;
+  }
+
+  .aboutTextContainer {
+    margin: 0 0 15px 0;
+  }
+
+  .aboutText {
+    text-align: center;
+  }
+
+  .dot {
+    width: 5px;
+    height: 5px;
+  }
+
+  .footerLinksContainer {
+    width: 100%;
+  }
+
+  .socialMediaIcons {
+    margin-bottom: 10px;
+  }
+
+  .support {
+    margin: 5px 0;
+  }
+
+  .footerLogo {
+    margin-top: 60px;
+  }
+
+  .footer {
+    height: 30px;
+  }
+
+  .authBox {
+    margin-top: 30px;
+  }
+
+  .number {
+    padding: 0 10px;
+  }
+}
