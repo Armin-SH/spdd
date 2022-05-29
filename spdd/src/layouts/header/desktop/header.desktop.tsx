@@ -1,35 +1,21 @@
 import React from 'react';
 import styles from "./header.desktop.module.css";
-import {Button, Div, Text, ToolBar} from "@elements";
+import {Div, Text, ToolBar} from "@elements";
 import Image from "next/image";
 import {useRouter} from "next/router";
 import Link from 'next/link';
+import {Logo} from '@image'
 
 const headerLinks = [
   {
-    slug: "users",
-    title: "پزشکان",
-    url: "/users",
+    slug: "products",
+    title: "محصولات",
+    url: "/products",
   },
   {
-    slug: "labs",
-    title: "آزمایش پزشکی در منزل",
-    url: "/labs",
-  },
-  {
-    slug: "pharmacies",
-    title: "داروخانه",
-    url: "/pharmacies",
-  },
-  {
-    slug: "posts",
-    title: "مجله سلامت",
-    url: "/posts",
-  },
-  {
-    slug: "faq",
-    title: "سوال های متداول",
-    url: "/faq",
+    slug: "blog",
+    title: "مقالات",
+    url: "/blog",
   },
   {
     slug: "about-us",
@@ -37,10 +23,15 @@ const headerLinks = [
     url: "/about-us",
   },
   {
-    slug: "contacts",
+    slug: "contact-us",
     title: "تماس با ما",
-    url: "/contacts",
+    url: "/contact-us",
   },
+  {
+    slug: 'gallery',
+    title: 'گالری تصاویر',
+    url: '/gallery'
+  }
 ];
 
 const HeaderDesktop = () => {
@@ -54,7 +45,7 @@ const HeaderDesktop = () => {
           key={title}
           href={url}>
           <a className={styles.headerLinkContainer}>
-            <Text color={isCurrent ? "primary" : "grey.500"} type={"bold"} typography={"caption"}>{title}</Text>
+            <Text color={isCurrent ? "control.main" : "info.main"} type={"bold"} typography={"caption"}>{title}</Text>
             {isCurrent ? <Div className={styles.currentHeaderLink}/> : null}
           </a>
         </Link>
@@ -69,12 +60,7 @@ const HeaderDesktop = () => {
           <Link href={"/"}>
             <a>
               <Div className={styles.logo}>
-                <Div className={styles.headerIcon}>
-                  <Image src={"/images/header/logo-icon.webp"} layout={"fill"} alt={"logo"} quality={100}/>
-                </Div>
-                <Div className={styles.headerTitle}>
-                  <Image src={"/images/header/logo-title.webp"} layout={"fill"} alt={"logo"} quality={100}/>
-                </Div>
+                <Image alt={'logo'} src={Logo} layout={'fill'} objectFit={"contain"}/>
               </Div>
             </a>
           </Link>
@@ -82,26 +68,9 @@ const HeaderDesktop = () => {
         <Div className={styles.menuButtonsContainer}>
           {getMenuButtons()}
         </Div>
-        <Div desktop={"row"} className={styles.loginButtonContainer}>
-          <UserInfo/>
-        </Div>
       </Div>
     </ToolBar>
   )
 };
-
-const UserInfo = () => {
-
-  return (
-    <>
-      <Button
-        color={"tertiary"}
-        className={styles.loginButton}
-        variant={"outlined"}>
-        <Text className={styles.userInfoName} color={"grey.300"} typography={"caption"}>{"ورود / ثبت نام"}</Text>
-      </Button>
-    </>
-  )
-}
 
 export default HeaderDesktop;

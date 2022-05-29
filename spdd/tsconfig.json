@@ -61,8 +61,8 @@
       "@schema/*": [
         "schema/*"
       ],
-      "@icons": [
-        "../public/svg/icons"
+      "@image": [
+        "../public/image"
       ]
     },
     "incremental": true
